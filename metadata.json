@@ -1,0 +1,6 @@
+{
+  "name": "Beatmap Bounty & Arena",
+  "description": "Community beatmap voting and curation portal featuring high-precision rhythm card specifications, audio waveform previews, and community bounty evaluations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

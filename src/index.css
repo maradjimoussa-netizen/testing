@@ -1,0 +1,196 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #003ec7;
+  --color-primary-container: #0052ff;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #dfe3ff;
+  --color-primary-fixed: #dde1ff;
+  --color-primary-fixed-dim: #b7c4ff;
+  --color-secondary: #565e74;
+  --color-secondary-container: #dae2fd;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #5c647a;
+  --color-secondary-fixed: #dae2fd;
+  --color-secondary-fixed-dim: #bec6e0;
+  --color-tertiary: #3f4f65;
+  --color-tertiary-container: #57677e;
+  --color-on-tertiary: #ffffff;
+  --color-on-tertiary-container: #d6e6ff;
+  --color-surface: #f7f9fb;
+  --color-surface-dim: #d8dadc;
+  --color-surface-bright: #f7f9fb;
+  --color-surface-variant: #e0e3e5;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f2f4f6;
+  --color-surface-container: #eceef0;
+  --color-surface-container-high: #e6e8ea;
+  --color-surface-container-highest: #e0e3e5;
+  --color-on-surface: #191c1e;
+  --color-on-surface-variant: #434656;
+  --color-outline: #737688;
+  --color-outline-variant: #c3c5d9;
+  --color-background: #f7f9fb;
+  --color-on-background: #191c1e;
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+  --color-on-error: #ffffff;
+  --color-on-error-container: #93000a;
+  --color-inverse-surface: #2d3133;
+  --color-inverse-on-surface: #eff1f3;
+
+  --font-display: 'Geist', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+:root {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-geist {
+  font-family: 'Geist', sans-serif;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom Spacing from Design System */
+.px-margin-desktop {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.p-margin-desktop {
+  padding: 32px;
+}
+.p-margin-mobile {
+  padding: 16px;
+}
+.p-md {
+  padding: 16px;
+}
+.p-lg {
+  padding: 24px;
+}
+.px-md {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.py-sm {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.gap-gutter {
+  gap: 24px;
+}
+.gap-lg {
+  gap: 24px;
+}
+.gap-md {
+  gap: 16px;
+}
+.gap-sm {
+  gap: 8px;
+}
+
+/* Material Symbols */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.material-symbols-outlined[data-weight="fill"] {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Typography styles matching design tokens */
+.font-display-lg {
+  font-family: 'Geist', sans-serif;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+.font-display-lg-mobile {
+  font-family: 'Geist', sans-serif;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+.font-headline-md {
+  font-family: 'Geist', sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+.font-headline-sm {
+  font-family: 'Geist', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+}
+.font-body-lg {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.font-body-md {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.font-body-sm {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.font-label-md {
+  font-family: 'Geist', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+.font-label-sm {
+  font-family: 'Geist', sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+/* Audio Player styling */
+.waveform-progress {
+  background-color: #0052ff;
+}
+.waveform-track {
+  background-color: #e0e3e5;
+}
+
+/* Custom polygon geometric pattern for Match Arena */
+.arena-bg-pattern {
+  background-color: #3b5fe3;
+  background-image: 
+    linear-gradient(135deg, rgba(30, 64, 175, 0.95) 0%, rgba(59, 130, 246, 0.9) 100%),
+    radial-gradient(circle at 50% 20%, rgba(96, 165, 250, 0.3) 0%, transparent 60%);
+}
+
+/* Custom glowing card effect */
+.card-glow-active {
+  box-shadow: 0 0 0 2.5px #ffffff, 0 0 25px rgba(255, 255, 255, 0.45);
+}
